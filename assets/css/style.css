@@ -1,0 +1,9 @@
+html{
+    scroll-behavior: smooth;
+ 
+}
+
+.nav-link,h4{
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Lobster', cursive;
+}
