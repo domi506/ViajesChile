@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -13,12 +13,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Viajes Chile</title>
-  <link rel="icon" type="image/x-ico" href="assest/img/viajes.ico">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/vnd.microsoft.icon" href="assest/img/viajes.ico">
 </head>
 
 <body>
-
   <div class="container-fluid">
     <div class="row">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1 bg-dark shadow">
@@ -75,7 +74,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-12 py-5 d-none d-lg-block">
-          <h4 class="text-center text-white my-2" >¿QUIÉNES SOMOS?</h4>
+          <h4 class="text-center text-white my-2">¿QUIÉNES SOMOS?</h4>
           <hr class="text-white">
         </div>
       </div>
@@ -137,7 +136,7 @@
   </div>
   <div class="container-fluid bg-dark">
     <section class="container ">
-      <div class="row justify-content-center" >
+      <div class="row justify-content-center">
         <div class=" col-md-3">
           <div class="card mx-auto mb-3" style="width: 15rem;">
             <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
@@ -192,27 +191,28 @@
   <section class="container-fluid bg-dark py-3">
     <div class="container text-white">
       <div class="row justify-content-center">
-        <div class="md-3">
+
         <form>
-          <div class=" mb-3">
+          <div class="col-11 col-sm-11 col-md-11 mx-auto">
             <label for="" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="">
           </div>
-          <div class="mb-3">
+          <div class="col-11 col-sm-11 col-md-11 mx-auto">
             <label for="" class="form-label">Asunto</label>
             <input type="text" class="form-control" id="">
           </div>
-          <div class="mb-3">
+          <div class="col-11 col-sm-11 col-md-11 mx-auto">
             <label for="" class="form-label">Mensaje</label>
-            <input type="textarea" class="form-control" id="">
+            <textarea name="observacion" id="" class="col-12 col-sm-12 col-md-12 mx-auto"></textarea>
           </div>
-          
-          <button class="btn bg-info text-white border" type="button" data-bs-toggle="modal"
-          data-bs-target="#enviarCorreo" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="Presiona para enviar a tu mensaje">Enviar</button>
+
+          <button class="btn bg-info text-white border my-3 ms-5" type="button" data-bs-toggle="modal"
+            data-bs-target="#enviarMensaje" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Presiona para enviar a tu mensaje">Enviar</button>
         </form>
+
       </div>
-      </div>
+    </div>
     </div>
   </section>
   <footer class="container-fluid bg-info py-3">
@@ -229,20 +229,19 @@
           <i class="fa-brands fa-linkedin fa-2x mx-2"></i>
 
           <i class="fa-brands fa-twitter-square fa-2x mx-2"></i>
-
-          <i class="fa-brands fa-facebook-square fa-2x mx-2"></i>
-
+          <a href="https://www.facebook.com/eDestinos/" target="_blank" rel="noopener noreferrer" class="text-white"><i
+              class="fa-brands fa-facebook-square fa-2x mx-2"></i></a>
         </div>
       </div>
     </div>
   </footer>
   <!-- Script Javascript -->
-   <!-- Modal -->
-   <div class="modal fade" id="enviarCorreo" tabindex=" -1" aria-labelledby="enviarCorreo" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="enviarMensaje" tabindex=" -1" aria-labelledby="enviarMensaje" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="enviarCorreo">Mensaje</h5>
+          <h5 class="modal-title" id="enviarMensaje">Mensaje</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
@@ -257,34 +256,6 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="favoritos" tabindex="-1" aria-labelledby="favoritos" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="favoritos">Añadir a favoritos</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body ">
-          <div class="row justify-content-center">
-            <div class="col-6 text-center my-auto  ">
-              <i class="fa-solid fa-heart display-3 text-danger"></i>
-            </div>
-            <div class="col-6  text-start my-auto ">
-              <h6>Fue añadido a favoritos...</h6>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-
         </div>
       </div>
     </div>
