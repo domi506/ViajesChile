@@ -1,0 +1,9 @@
+
+#color {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    background-color:blue;
+    font-size: 2em;
+    border-color: #000000;
+}
